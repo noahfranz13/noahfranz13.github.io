@@ -5,3 +5,5 @@
 layout: home
 ---
 # Noah Franz
+
+Welcome! This is the home page for my website! It is a work in progress so please check back for updates. 
