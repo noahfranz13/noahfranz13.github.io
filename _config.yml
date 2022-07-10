@@ -31,7 +31,7 @@ url: "https://noahfranz13.github.io" # the base hostname & protocol for your sit
 github_username:  noahfranz13
 
 # Build settings
-theme: minima
+theme: minimal
 plugins:
   - jekyll-feed
 
