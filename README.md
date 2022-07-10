@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Noah Franz
 
 You can use the [editor on GitHub](https://github.com/noahfranz13/noahfranz13.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
