@@ -16,7 +16,8 @@
 	  -o-background-size: cover;
 	  background-size: cover;
 	  color: white;
-	  font-family: serif
+	  font-family: "Courier New";
+	  font-weight: 500
       }
       
       header {
@@ -29,6 +30,19 @@
 	  z-index: 100;
 	  float: center;
 	  text-align: center;
+      }
+
+      footer {
+	  color: white;
+	  font-size: 50px;
+	  width: 95%;
+	  height: 10%;
+	  background: transparent;
+	  position: relative;
+	  padding-top: 10%;
+	  z-index: 1;
+	  float: bottom;
+	  text-align:center;
       }
       
       article {
@@ -70,17 +84,13 @@
       .change .bar3 {
 	  transform: translate(0, -20px) rotate(45deg);
       }
-
-      .spaced-text {
-	  padding-bottom: 1cm;
-      }
-
+  
       .dropdown {
 	  position: relative;
 	  display: inline-block;
 	  z-index: 1
       }
-      
+          
       .dropdown-content {
 	  display: none;
 	  position: relative;
@@ -121,15 +131,9 @@
 	</button>
 
 	<div id="nav" class="dropdown-content" style="float:bottom;display:none">
-	  <p class="spaced-text">
 	    <a href="./">Home</a><br>
-	  </p>
-	  <p class="spaced-text">
 	    <a href="./about.html"> About</a><br>
-	  </p>
-	  <p class="spaced-text">
 	    <a href="./NoahFranz_Resume.pdf"> CV</a><br>
-	  </p>
 	</div>
 
       </div>
@@ -186,6 +190,13 @@
       </p>
     </article>
 
+    <footer>
+      <p>
+	<a href="https://github.com/noahfranz13" target="_blank" rel="noopener" style="text-decoration-line: underline">GitHub</a>
+	| 
+	<a href="mailto:noahfranz13@gmail.com" style="text-decoration-line: underline;">Email</a>
+      </p>
+    </footer>
 
     <script>
 
