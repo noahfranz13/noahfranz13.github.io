@@ -1,41 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-  <style>
-  body {
-      background-color: black;
-      color: white;
-      font-family: serif
-  } 
-  </style>
-  
   <head>
+
     <meta charset="utf-8">
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <title>Home</title>
+
+    <style>	  
+	  
+      body {
+	  background: black;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  color: white;
+	  font-family: serif
+      }
+      
+      header {
+	  text: 100px;
+	  width: 97%;
+	  padding:1%;
+	  height: 25%;
+	  background: transparent;
+	  position: absolute;
+	  z-index: 100;
+	  float: center;
+	  text-align: center;
+      }
+      
+      article {
+	  float: left;
+	  font-size: 24px;
+	  text-align: left;
+	  background-color: transparent;
+	  padding-top: 0%;
+	  padding-left: 15%;
+	  padding-right: 15%;
+	  width: 70%;
+	  position: relative;
+	  z-index: 10
+      }
+
+      a {
+	  color: inherit;
+      }
+      
+      .container {
+	  display: inline-block;
+	  cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+	  width: 70px;
+	  height: 10px;
+	  background-color: white;
+	  margin: 10px 0;
+	  transition: 0.4s;
+      }
+      
+      .change .bar1 {
+	  transform: translate(0, 20px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+	  transform: translate(0, -20px) rotate(45deg);
+      }
+
+      .spaced-text {
+	  padding-bottom: 1cm;
+      }
+
+      .dropdown {
+	  position: relative;
+	  display: inline-block;
+	  z-index: 1
+      }
+      
+      .dropdown-content {
+	  display: none;
+	  position: relative;
+	  background-color: transparent;
+	  z-index: 1
+      }
+
+      .dropdown-content a {
+	  color: white;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  font-size: 50px;
+	  text-align: left;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  position: relative;
+	  z-index: 1
+      }
+            
+    </style>
   </head>
-
+  
   <body>
-  <h1>About</h1>
+
+    <header>
+      <img src="./images/headshot.png"
+	   style="float:right;
+		  max-height: 200px;"
+	   alt="Professional Headshot">
+
+      <div class="dropdown", style="float:left">
+
+	<button class="container" id="btn" style="float:top;background-color:transparent;border:none">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</button>
+
+	<div id="nav" class="dropdown-content" style="float:bottom;display:none">
+	  <p class="spaced-text">
+	    <a href="./">Home</a><br>
+	  </p>
+	  <p class="spaced-text">
+	    <a href="./about.html"> About</a><br>
+	  </p>
+	  <p class="spaced-text">
+	    <a href="./NoahFranz_Resume.pdf"> CV</a><br>
+	  </p>
+	</div>
+
+      </div>
+      
+    </header> 
     
-  <nav class="nav" id="navigation">
-    <ul class="nav__list">
-      
-      
-      <li>
-        <a  href="./index.html"> home</a>
-      </li>
-      
-      <li>
-        <a  href="./about.html">about</a>
-      </li>
-      
-      <li>
-        <a  href="./NoahFranz_Resume.pdf">cv</a>
-      </li>
+    <article>
+      <p style='font-size: 100px; float: top'>
+	About Me
+      </p>
 
-    </ul>
-  </nav>  
-    <p>This page is still under construction :(</p>
+      <p style='font-size:50px; float:top'>
+	Professionally
+      </p>
+      <p>
+	In spring 2023, I graduated Summa Cum Laude from Siena College with a B.S. Degree. In
+	undergraduate, I double majored in Physics and Applied Data Science and obtained minors
+	in Astronomy and Mathematics. During these four years, I also discovered my strong interests
+	in astronomy, big data, data science, and programming. Throughout undergraduate, I explored a
+	wide variety of research interests including working with the
+	<a href="https://www.desi.lbl.gov/">Dark Energy Spectroscopic Instrument</a>,
+	<a href="https://seti.berkeley.edu/">Berkeley Search for Extraterrestrial Intelligence</a>,
+	and
+	<a href="https://www.ifa.hawaii.edu/">The University of Hawaii Institute for Astronomy</a>.
+	See my <a href="./NoahFranz_Resume.pdf">CV</a> for more details.
+      </p>
+      <p>
+	In Fall 2023, I will applying these interests as an Astronomy graduate student at the
+	University of Arizona Department of Astronomy ( 
+	<a href=https://www.as.arizona.edu/?D=D>Steward Observatory</a>). I am motivated to study
+	astronomy by the possibilities to unravel deep mysteries of the universe. One area I am
+	especially interested in is understanding black holes. As a result, I plan to study transients
+	like tidal disruption events which can provide important insight into the area surrounding
+	these mysterious objects. (Disclaimer: this is my interest as of Summer 2023 but is subject to
+	change since I'm only a first year!)
+      </p>
+
+      <p style='font-size:50px; float top'>
+	Hobbies
+      </p>
+      <p>
+	In my spare time I pursue many (probably too many) hobbies. To list a few, I play ultimate
+	frisbee, hike and backpack, alpine ski, and mountain bike. I have played Ultimate Frisbee
+	my first year of high school where I started with Air Traffic Control at Brighton High School.
+	Then, I played with Siena College's team through undergraduate. I've mostly hiked and
+	backpacked along the east coast, primarly in New York's Adirondack State Park. Similarly,
+	I have spent most of my time skiing and mountain biking on the east coast but am very excited
+	to spend the next chapter of my life exploring the southwest US!
+      </p>
+      <p>
+	These athletic activities take up most of my time but I also like to travel and take photos,
+	especially landscapes. In fact, the background of the home page of this website is from a
+	backpacking trip I took in the High Peaks Region of the Adirondacks!
+      </p>
+    </article>
+
+
+    <script>
+
+      document.getElementById("btn").onclick = function() {menu(); changeButton();}
+
+      function changeButton() {
+	  document.getElementById("btn").classList.toggle("change");
+      }
+      
+      function menu() {
+	  var menu = document.getElementById("nav");
+	  if (menu.style.display == "none"){
+	      menu.style.display = "block";
+	  }
+	  else {
+	      menu.style.display = "none";
+	  }
+      }
+      
+    </script>
+    
   </body>
-
+  
 </html>
