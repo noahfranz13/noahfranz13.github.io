@@ -16,7 +16,7 @@
 	  -o-background-size: cover;
 	  background-size: cover;
 	  color: white;
-	  font-family: "Courier New";
+	  font-family: "Helvetica";
 	  font-weight: 700;
 	  position: relative;
       }
@@ -62,56 +62,25 @@
       a {
 	  color: inherit;
       }
-      
-      .container {
-	  display: inline-block;
-	  cursor: pointer;
-      }
-      
-      .bar1, .bar2, .bar3 {
-	  width: 70px;
-	  height: 10px;
-	  background-color: white;
-	  margin: 10px 0;
-	  transition: 0.4s;
-      }
-      
-      .change .bar1 {
-	  transform: translate(0, 20px) rotate(-45deg);
-      }
-      
-      .change .bar2 {opacity: 0;}
-      
-      .change .bar3 {
-	  transform: translate(0, -20px) rotate(45deg);
-      }
-  
-      .dropdown {
-	  position: relative;
-	  display: inline-block;
-	  z-index: 1
-      }
-          
-      .dropdown-content {
-	  display: none;
-	  position: relative;
-	  background-color: transparent;
-	  z-index: 1
+
+      menu {
+	  float: left;
       }
 
-      .dropdown-content a {
-	  color: white;
-	  padding: 12px 16px;
-	  text-decoration: none;
-	  display: block;
-	  font-size: 50px;
-	  text-align: left;
-	  padding-left: 10px;
-	  padding-right: 10px;
-	  position: relative;
-	  z-index: 1
+      menu a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    font-size: 50px;
       }
-            
+
+      menu a:hover {
+	  background-color: #111;
+      }
+
+      
     </style>
   </head>
   
@@ -123,21 +92,11 @@
 		  max-height: 200px;"
 	   alt="Professional Headshot">
 
-      <div class="dropdown", style="float:left">
-
-	<button class="container" id="btn" style="float:top;background-color:transparent;border:none">
-	  <div class="bar1"></div>
-	  <div class="bar2"></div>
-	  <div class="bar3"></div>
-	</button>
-
-	<div id="nav" class="dropdown-content" style="float:bottom;display:none">
-	    <a href="./">Home</a><br>
-	    <a href="./about.html"> About</a><br>
-	    <a href="./cv.html"> CV</a><br>
-	</div>
-
-      </div>
+      <menu>
+	<a href="./index.html">Home</a>
+	<a href="./about.html">About</a>
+	<a href="./cv.html">CV</a>
+      </menu>
       
     </header> 
 
@@ -149,33 +108,11 @@
 
     <footer>
       <p>
-	<a href="https://github.com/noahfranz13" target="_blank" rel="noopener" style="text-decoration-line: underline">GitHub</a>
-	|
-	<a href="mailto:noahfranz13@gmail.com" style="text-decoration-line: underline;">Email</a>
-	|
-	<a href="https://www.linkedin.com/in/noahrfranz" target="_blank" rel="noopener" style="text-decoration-line: underline">LinkedIn</a>
+	<a href="https://github.com/noahfranz13" target="_blank" rel="noopener"><img src="./images/github-mark-white.png" alt="github" style="height:42px;"></a>
+	<a href="" style="text-decoration-line: underline;"><img alt="ORCID logo" src="./images/orcid.png" style="height:42px"></a>
+	<a href="https://www.linkedin.com/in/noahrfranz" target="_blank" rel="noopener" style="text-decoration-line: underline"><img src="./images/linkedin.png" style="height:42px"</a>
       </p>
     </footer>
-
-    <script>
-
-      document.getElementById("btn").onclick = function() {menu(); changeButton();}
-
-      function changeButton() {
-	  document.getElementById("btn").classList.toggle("change");
-      }
-      
-      function menu() {
-	  var menu = document.getElementById("nav");
-	  if (menu.style.display == "none"){
-	      menu.style.display = "block";
-	  }
-	  else {
-	      menu.style.display = "none";
-	  }
-      }
-      
-    </script>
     
   </body>
   
