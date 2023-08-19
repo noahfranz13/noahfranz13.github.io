@@ -10,7 +10,7 @@
     <style>	  
 	  
       body {
-	  background: black;
+	  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stars.jpg) no-repeat center center fixed #000;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -18,7 +18,7 @@
 	  color: white;
 	  font-family: "Helvetica";
 	  font-weight: 500;
-	  position: absolute;
+	  position: relative;
       }
       
       header {
@@ -40,23 +40,24 @@
 	  height: 10%;
 	  background: transparent;
 	  position: absolute;
-	  padding-top: 78%;
+	  padding-top: 0%;
 	  z-index: 1;
 	  float: bottom;
 	  text-align:center;
       }
       
       article {
-	  float: left;
+	  margin-left: auto;
+	  margin-right: auto;
 	  font-size: 24px;
 	  text-align: left;
-	  background-color: transparent;
-	  padding-top: 0%;
-	  padding-left: 15%;
-	  padding-right: 15%;
-	  width: 70%;
+	  background-color: black;
+	  padding-top: 1%;
+	  padding-bottom: 1%;
+	  padding-left: 5%;
+	  padding-right: 5%;
+	  width: 40%;
 	  position: relative;
-	  z-index: 10
       }
 
       a {
@@ -75,6 +76,7 @@
 	    padding: 14px 16px;
 	    text-decoration: none;
 	    font-size: 50px;
+	    font-weight: bold;
       }
 
       menu a:hover {
@@ -82,9 +84,8 @@
       }
 
       header b {
-	  font-size: 100px;
+	  font-size: 75px;
       }
-
                   
     </style>
   </head>
@@ -94,7 +95,7 @@
     <header>
       <img src="./images/headshot.png"
 	   style="float:right;
-		  max-height: 200px;"
+		  max-height: 150px;"
 	   alt="Professional Headshot">
 
       <b>
@@ -110,9 +111,6 @@
     </header> 
     
     <article>
-      <p style='font-size: 100px; float: top'>
-      </p>
-
       <p style='font-size:50px; float:top'>
 	Professionally
       </p>
