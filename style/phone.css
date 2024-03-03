@@ -1,0 +1,86 @@
+menu {
+    float: left;
+    position: relative;
+}
+
+menu a {
+    display: block; /* block to make it vertical */
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 50px;
+    text-decoration: bold;
+    font-size: 30px;
+}
+
+menu a:hover {
+    background-color: #222222;
+}
+
+header img {
+    float: right;
+    text-align: center;
+    max-height: 100px;
+    padding: 10px 10px;
+}
+
+header {
+    text: 100px;
+    width: 97%;
+    padding:1%;
+    background: transparent;
+    position: relative;
+    z-index: 100;
+    float: center;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+footer {
+    text: 100px;
+    color: white;
+    width: 97%;
+    height: 10%;
+    background: transparent;
+    position: relative;
+    padding-top: 10%;
+    z-index: 100;
+    float: center;
+    text-align:center;
+}
+
+hr {
+    margin-left: 2.55%;
+    margin-right: 2.5%;
+    width: 95%;
+    color: white
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer img:hover {
+    background-color: #222222;
+}
+
+footer img {
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+footer {
+    position: relative;
+    float: bottom;
+}
+
+p {
+  margin: 0;
+}
+
+b {
+    font-size: 50px;
+}

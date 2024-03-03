@@ -1,103 +1,44 @@
 <!doctype html>
 <html lang="en">
   <head>
-
+    <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 480px)" href="style/desktop.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="style/phone.css" />
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 
     <title>Home</title>
-
-    <style>	  
-	  
-      body {
-	  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stars.jpg) no-repeat center center fixed #000;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  color: white;
-	  font-family: "Helvetica";
-	  font-weight: bold;
-	  position: relative;
-      }
-      
-      header {
-	  text: 100px;
-	  width: 97%;
-	  padding:1%;
-	  background: transparent;
-	  position: relative;
-	  z-index: 100;
-	  float: center;
-	  text-align: center;
-	  padding-bottom: 10%;
-      }
-
-      footer {
-	  color: white;
-	  font-size: 50px;
-	  width: 95%;
-	  height: 10%;
-	  background: transparent;
-	  position: relative;
-	  padding-top: 4%;
-	  z-index: 100;
-	  float: bottom;
-	  text-align:center;
-      }
-
-      article {
-	  float: center;
-	  text-align: center;
-	  background-size: cover;
-	  padding-top: 0%;
-	  width: 99%;
-	  position: relative;
-	  z-index: 10
-      }
-
-      menu {
-	  float: left;
-	  position: relative;
-      }
-
-      menu a {
-	    display: block;
-	    color: white;
-	    text-align: center;
-	    padding: 10px 0px;
-	    text-decoration: none;
-	    font-size: 30px;
-      }
-
-      menu a:hover {
-	  background-color: #222222;
-      }
-
-      a {
-	  text-decoration: none;
-	  color: inherit;
-      }
-
-      footer img:hover {
-	  background-color: #222222;
-      }
-
-      p {
-	  margin: 0;
-      }
-      
-    </style>
   </head>
+
+  <style>
+    body {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stars.jpg) no-repeat center center fixed #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	font-family: "Helvetica";
+	font-weight: bold;
+	position: relative;
+    }
+    
+    article {
+	float: center;
+	text-align: center;
+	background-size: cover;
+	padding-top: 0%;
+	width: 99%;
+	position: relative;
+	z-index: 10
+    }
+
+  </style>
   
   <body>
 
     <header>
       <img src="./images/headshot.png"
-	   style="float:right;
-		  max-height: 150px;
-		  padding-top: 25px;
-		  "
 	   alt="Professional Headshot">
 
       <menu>
@@ -106,7 +47,7 @@
 	<a href="./pdfs/NoahFranz_CV.pdf">CV</a>
       </menu>
 
-      <hr width="100%" color="white">
+      <hr>
     </header> 
     
     <article>
@@ -116,6 +57,7 @@
     </article>
 
     <footer>
+      <hr>
       <p>
 	<a href="https://github.com/noahfranz13" target="_blank" rel="noopener"><img src="./images/github-mark-white.png" alt="github" style="height:42px;"></a>
 	<a href="https://orcid.org/0000-0003-4537-3575" style="text-decoration-line: underline;"><img alt="ORCID logo" src="./images/orcid.png" style="height:42px"></a>
