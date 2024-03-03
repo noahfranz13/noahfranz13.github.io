@@ -85,3 +85,27 @@ p {
 b {
     font-size: 50px;
 }
+
+p {
+    margin: 5%;
+    font-size: 16px;
+}
+
+b {
+    font-size: 50px;
+}
+
+li b {
+    font-size: 20px;
+}
+
+li span {
+    display: inline-block;
+    margin-left:1em;
+    margin-right:auto;
+    font-size: 16px;
+}
+
+a href {
+    text-decoration: underline;
+}
