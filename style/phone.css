@@ -7,8 +7,8 @@ menu a {
     display: block; /* block to make it vertical */
     color: white;
     text-align: center;
-    margin-top: 30px;
-    padding: 10px 50px;
+    margin-top: 0px;
+    padding: 10px 5px;
     text-decoration: bold;
     font-size: 30px;
 }
@@ -78,7 +78,8 @@ footer {
 }
 
 p {
-  margin: 0;
+    margin: 5%;
+    font-size: 16px;
 }
 
 b {
