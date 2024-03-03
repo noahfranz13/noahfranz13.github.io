@@ -1,0 +1,140 @@
+/* body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stars.jpg) no-repeat center center fixed #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: "Helvetica";
+    position: relative;
+}
+*/
+
+body {
+    background: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: "Helvetica";
+    font-weight: 500;
+    position: relative;
+}
+
+menu {
+    float: left;
+    position: relative;
+}
+
+menu a {
+    display: block; /* block to make it vertical */
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px 5px;
+    text-decoration: bold;
+    font-size: 30px;
+}
+
+menu a:hover {
+    color: #800000;
+}
+
+header img {
+    float: right;
+    text-align: center;
+    max-height: 150px;
+    padding: 10px 10px;
+}
+
+header {
+    text: 100px;
+    width: 97%;
+    padding:1%;
+    background: transparent;
+    position: relative;
+    z-index: 100;
+    float: center;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+footer {
+    text: 100px;
+    color: white;
+    width: 97%;
+    height: 10%;
+    background: transparent;
+    position: relative;
+    padding-top: 10%;
+    z-index: 100;
+    float: center;
+    text-align:center;
+}
+
+hr {
+    margin-left: 2.55%;
+    margin-right: 2.5%;
+    width: 95%;
+    color: white
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer img {
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+footer {
+    position: relative;
+    float: bottom;
+}
+
+p {
+    margin: 5%;
+    font-size: 16px;
+}
+
+b {
+    font-size: 50px;
+}
+
+p {
+    margin: 5%;
+    font-size: 16px;
+}
+
+b {
+    font-size: 50px;
+}
+
+li b {
+    font-size: 20px;
+}
+
+li span {
+    display: inline-block;
+    margin-left:1em;
+    margin-right:auto;
+    font-size: 16px;
+}
+
+a href {
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color:#800000;
+}
