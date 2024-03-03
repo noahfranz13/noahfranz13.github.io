@@ -1,3 +1,27 @@
+/* body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/stars.jpg) no-repeat center center fixed #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: "Helvetica";
+    position: relative;
+}
+*/
+
+body {
+    background: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: "Helvetica";
+    font-weight: 500;
+    position: relative;
+}
+
 menu {
     float: left;
     position: relative;
@@ -14,13 +38,13 @@ menu a {
 }
 
 menu a:hover {
-    background-color: #222222;
+    color: #800000;
 }
 
 header img {
     float: right;
     text-align: center;
-    max-height: 100px;
+    max-height: 150px;
     padding: 10px 10px;
 }
 
@@ -59,10 +83,6 @@ hr {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-footer img:hover {
-    background-color: #222222;
 }
 
 footer img {
@@ -108,4 +128,13 @@ li span {
 
 a href {
     text-decoration: underline;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color:#800000;
 }
