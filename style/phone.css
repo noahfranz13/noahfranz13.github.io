@@ -30,11 +30,11 @@ menu {
 menu a {
     display: block; /* block to make it vertical */
     color: white;
-    text-align: center;
+    text-align: left;
     margin-top: 0px;
     padding: 10px 3px;
     text-decoration: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 menu a:hover {
