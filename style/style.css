@@ -66,6 +66,10 @@ body {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
+.dropdown .dropbtn:hover {
+    color: cornflowerblue;
+}
+
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -143,28 +147,6 @@ footer img {
 footer {
     position: relative;
     float: bottom;
-}
-
-p {
-    margin: 5%;
-    font-size: 16px;
-}
-
-b {
-    font-size: 50px;
-}
-
-p {
-    margin: 5%;
-    font-size: 16px;
-}
-
-b {
-    font-size: 50px;
-}
-
-li b {
-    font-size: 20px;
 }
 
 li span {
