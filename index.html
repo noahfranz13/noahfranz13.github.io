@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 480px)" href="style/desktop.css" />
-    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="style/phone.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 800px)" href="style/desktop.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 800px)" href="style/phone.css" />
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -12,14 +13,14 @@
 
   <style>    
     article {
-	float: center;
-	text-align: center;
-	background-size: cover;
-	padding-top: 0%;
-	width: 99%;
-	position: relative;
-	font-weight: bold;
-	z-index: 10
+        float: center;
+        text-align: center;
+        background-size: cover;
+        padding-top: 0%;
+        width: 99%;
+        position: relative;
+        font-weight: bold;
+        z-index: 10
     }
 
   </style>
@@ -27,24 +28,55 @@
   <body>
 
     <header>
-      <img src="./images/headshot.png"
-	   alt="Professional Headshot">
+      <!-- <img src="./images/headshot.png"
+	   alt="Professional Headshot"> -->
 
-      <menu>
-	<a href="./index.html">Home</a>
-	<a href="./about.html">About</a>
-	<a href="./research.html">Research</a>
-	<a href="./pdfs/NoahFranz_CV.pdf">CV</a>
-      </menu>
+      <div class="navbar-fixed">
+	    <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./research.html">Research</a>
+        <a href="./pdfs/NoahFranz_CV.pdf">CV</a>
+      </div>
 
+      <div class="navbar-dropdown">
+        <div class="dropdown">
+          <button class="dropbtn">Menu
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+	        <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./research.html">Research</a>
+            <a href="./pdfs/NoahFranz_CV.pdf">CV</a>
+          </div>
+        </div>
+     </div>
+      
       <hr>
     </header> 
     
     <article>
-      <p style="font-size:100px">Noah Franz</p>
-      <p style="font-size:25px">&nbsp;</p>
-      <p style="font-size:30px">Astro PhD Student at University of Arizona</p>
-    </article>
+      <div class="homepage">
+
+        <div class='homepageleft'>
+          <p style="font-size:100px;">
+            Noah
+            <br>
+            Franz
+          </p>
+        </div>
+
+        <div class="homepageright">
+          <img src="./images/headshot.png"
+               alt="Professional Headshot"
+               style="max-height:250px">
+        </div>
+        
+        <div style="clear: both;"></div>
+        <div class="homepagebottom">&nbsp;</p>
+        <div class="homepagebottom">Astro PhD Student at University of Arizona</div>
+        </div>
+      </article>
 
     <footer>
       <hr width="100%" color="white">

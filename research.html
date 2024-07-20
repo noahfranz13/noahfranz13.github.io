@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 480px)" href="style/desktop.css" />
-    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="style/phone.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 800px)" href="style/desktop.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 800px)" href="style/phone.css" />
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -10,19 +11,7 @@
     <title>Research</title>
 
     <style>	  
-	  
-      body {
-	  background: black;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  color: white;
-	  font-family: "Helvetica";
-	  font-weight: 500;
-	  position: relative;
-      }
-            
+	              
       article {
 	  margin-left: auto;
 	  margin-right: auto;
@@ -47,16 +36,30 @@
   <body>
 
     <header>
-      <img src="./images/headshot.png"
-	   alt="Professional Headshot">
+      <!-- <img src="./images/headshot.png"
+	   alt="Professional Headshot"> -->
       
-      <menu>
-	<a href="./index.html">Home</a>
-	<a href="./about.html">About</a>
-	<a href="./research.html">Research</a>
-	<a href="./pdfs/NoahFranz_CV.pdf">CV</a>
-      </menu>
+      <div class="navbar-fixed">
+	    <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./research.html">Research</a>
+        <a href="./pdfs/NoahFranz_CV.pdf">CV</a>
+      </div>
 
+      <div class="navbar-dropdown">
+        <div class="dropdown">
+          <button class="dropbtn">Menu
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+	        <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./research.html">Research</a>
+            <a href="./pdfs/NoahFranz_CV.pdf">CV</a>
+          </div>
+        </div>
+     </div>
+      
       <hr width="100%" color="white">
     </header> 
     
@@ -71,6 +74,16 @@
 	or <a href="https://scholar.google.com/citations?user=nduF-3EAAAAJ&hl=en&authuser=1" style="text-decoration-line: underline;"> Google Scholar</a>.
 	Some relevant projects are:
 	<ul>
+      <li><b>Open mulTiwavelength Transient Even Repository (OTTER):</b><br>
+	    <span>
+          OTTER is a work in progress with the goal of hosting a cleaned version of
+          all public time domain photometry. The current dataset and codes are available
+          at <a href='https://github.com/astro-otter' style="text-decoration-line: underline;">the OTTER github</a>. This will be
+          migrated to a more permanent and scalable hosting environment in the near future.
+	    </span>
+	  </li>
+	  <br>
+
 	  <li><b>Constraining the Neutrino Magnetic Dipole Moment:</b><br>
 	    <span>
 	      By modifying the MESA codes and evoloving stars up until the tip of the
@@ -81,6 +94,7 @@
 	    </span>
 	  </li>
 	  <br>
+
 	  <li><b>Searching for Extraterrestrial life around Exoplanets:</b><br>
 	    <span>
 	      With Dr. Steve Croft at UC Berkeley's Search for Extraterrestrial
@@ -89,7 +103,8 @@
 	    </span>
 	  </li>
 	  <br>
-	  <li><b>Spectroscopic Lenses in DESI:</b><br>
+
+      <li><b>Spectroscopic Lenses in DESI:</b><br>
 	    <span>
 	      I developed a pipeline to search the Dark
 	      Energy Spectroscopic Instrument (DESI) data for spectroscopic lenses with Dr.
@@ -108,14 +123,32 @@
 	is publicly available on <a href="https://github.com/noahfranz13" style="text-decoration-line: underline;"> my GitHub</a>.
 	Here are a few of my most relevant projects:
 	<ul>
-	  <li><b><a href='https://github.com/astro-otter' style="text-decoration-line: underline;">OTTER</a></b>
+	  <li><b><a href='https://astro-otter.readthedocs.io' style="text-decoration-line: underline;">OTTER API</a></b><br>
 	    <span>
-	      OTTER is a work in progress but will be a catalog of tidal disruption
-	      events along with a flexible software suite of tools used to read, write,
-	      and visualize the datasets.
+          A python package for interacing with the <a href='https://github.com/astro-otter'>OTTER</a> datasets.
 	    </span>
 	  </li>
 	  <br>
+
+      <li><b><a href='https://syncfit.readthedocs.io' style="text-decoration-line: underline;">syncfit</a></b>
+	    <span>
+          A python package for fitting synchrotron radiation dominated spectral energy distributions
+          with commonly used theoretical models. This package utilized multiple Bayesian Markov chain Monte Carlo
+          tools to optimize the best model fit for the data in a high dimensional parameter space.
+	    </span>
+	  </li>
+	  <br>
+
+      <li><b><a href='https://saguaro-mma.github.io' style="text-decoration-line: underline;">SAGUARO</a></b>
+	    <span>
+          SAGUARO (Searches After Gravitational waves Using ARizona Observatories) is a multimessenger followup
+          program for optical searches for multiwavelength counterparts to gravitational wave events. As part of
+          this project, I work on the Target and Observation Management infrastructure for easily visualizing
+          and triggering followup observations.
+        </span>
+	  </li>
+	  <br>
+
 	  <li><b><a href='https://hepfile.readthedocs.io' style="text-decoration-line: underline;">hepfile</a></b>
 	    <span>
 	      A software used to store so-called heterogeneous datasets, or data that
