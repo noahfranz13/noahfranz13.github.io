@@ -125,6 +125,14 @@ body {
     display: none;
 }
 
+.about-hdr {
+    font-size:32px;
+    text-align:right;
+    width:95%;
+    float:right;
+    padding-bottom: 10%;
+}
+
 header {
     text: 30px;
     width: 97%;
