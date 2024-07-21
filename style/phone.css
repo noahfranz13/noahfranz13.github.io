@@ -38,3 +38,16 @@ p {
 li b {
     font-size: 20px;
 }
+
+header img {
+  float:left;  
+  max-height: 40px;
+  text-align: left;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 27px 27px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}

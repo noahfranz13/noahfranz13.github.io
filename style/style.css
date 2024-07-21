@@ -11,11 +11,11 @@ body {
 }
 
 .navbar-fixed {
-    float:left;
+    float:right;
     position: relative;
     margin-bottom: 1%;
     margin-top: 1%;
-    margin-left: 5%;
+    margin-right: 5%;
     /* text-size: 30px; */
 }
 
