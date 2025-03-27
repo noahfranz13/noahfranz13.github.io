@@ -3707,7 +3707,7 @@ input, select, textarea {
 
 /* Footer */
 		footer {
-		    background-color: dimgray
+		    background-color: inherit
 		}
 	#footer .copyright {
 		font-size: 0.8em;
